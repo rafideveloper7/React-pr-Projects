@@ -1,0 +1,23 @@
+.footer {
+    width: 80%;
+    height: 2em;
+    /* background-color: black; */
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFB22C;
+}
+.footer p:hover {
+    color: #FFB22C;
+}
+

@@ -1,0 +1,44 @@
+.counter-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.counter-container h1 {
+    color: #ffff00;
+}
+
+.btns {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btns .increase{
+    color: rgb(0, 0, 0);
+    background-color: chartreuse;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btns .decrease{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 55, 0);
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+}
+
+.counter-container button {
+    display: inline-block;
+    font-size: larger;
+    font-weight: 700;
+}
