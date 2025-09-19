@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-main-container {
+  width: 100%;
+  height: 100vh; /* full screen */
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  background-image: url("../../assets/login-register-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+.left-content {
+  max-width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-content .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.left-content img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+/* Right Section (Form) */
+.form-container {
+  width: 40%;
+  height: 100%;
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* in case form is taller */
+}
+
+.inputs {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 75%;
+  height: 35px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+
+.login-btn {
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+p a {
+  color: chartreuse;
+  text-decoration: none;
+}
+
+/* 📱 Responsive: Tablet */
+@media (max-width: 1024px) {
+  .left-content {
+    width: 40%;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+
+  .content h1 {
+    font-size: 25px;
+  }
+
+  .left-content img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* 📱 Responsive: Mobile */
+@media (max-width: 768px) {
+  .login-main-container {
+    flex-direction: column; /* stack them */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .left-content {
+    width: 100%;
+    height: 30%; /* takes 30% of height */
+  }
+
+  .form-container {
+    width: 90%;
+    height: 60%; /* takes 60% of height */
+  }
+
+  .content h1 {
+    font-size: 15px;
+  }
+
+  .left-content img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .login-btn {
+    width: 60%;
+  }
+
+  label {
+    width: 25%;
+    font-size: 14px;
+  }
+}
+
+/* 📱 Tiny Screens */
+@media (max-width: 480px) {
+  .login-main-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .left-content {
+    width: 100%;
+    height: 30%; /* 30% for content */
+  }
+
+  .form-container {
+    width: 95%;
+    height: 60%; /* 60% for form */
+    padding: 15px;
+  }
+
+  .left-content img {
+    display: none; /* optional: hide image */
+  }
+
+  .content h1 {
+    font-size: 35px !important;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+  }
+
+  .inputs {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+  }
+
+  label {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}

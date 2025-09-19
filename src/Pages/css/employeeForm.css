@@ -1,0 +1,108 @@
+/* ===== Employee Form CSS ===== */
+
+.form-container {
+  width: 100%;
+  width: 550px !important;
+  background: rgba(255, 255, 255, 0.25); /* transparent */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+}
+
+/* Title */
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Form layout */
+.form-container form {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  backdrop-filter: blur(20px);
+}
+
+/* Input groups */
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputs label {
+  width: 30%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: right;
+}
+
+.form-container form input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container form input:focus {
+  border-color: blue;
+  box-shadow: 0 0 6px rgba(0, 0, 255, 0.3);
+}
+
+/* Submit button */
+.register-btn,
+.inputs input[type="submit"] {
+  width: 100%;
+  background: blue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover,
+.inputs input[type="submit"]:hover {
+  background: darkblue;
+}
+
+/* 📱 Mobile tweaks */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 95%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 18px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inputs label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  .form-container form input {
+    width: 100%;
+  }
+}

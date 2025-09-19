@@ -1,0 +1,49 @@
+/* ===== Employees Page CSS ===== */
+
+.employees-page {
+  width: 100%;
+  height: 80vh; /* leave space for header + footer */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-sizing: border-box;
+  /* background: rgba(255, 255, 255, 0.05); */
+  backdrop-filter: blur(6px);
+}
+
+/* Page Title */
+.employees-page h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.employees-page h1 a {
+  margin-left: 10px;
+  font-size: 16px;
+  color: blue;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.employees-page h1 a:hover {
+  color: darkblue;
+}
+
+/* Container for cards */
+.employee-list {
+    /* background-color: aqua; */
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* margin-top: 20px; */
+  box-sizing: border-box;
+  overflow: auto;
+}

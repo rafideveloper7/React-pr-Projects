@@ -1,0 +1,171 @@
+/* 🔹 Full Page Layout */
+.login-main-container {
+  width: 100%;
+  height: 80vh; /* content area between header & footer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../assets/login-register-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 5%;
+  box-sizing: border-box;
+  gap: 40px;
+  overflow: hidden; /* no scrollbars */
+}
+
+/* ===== Left Content (image + text) ===== */
+.left-content {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content .content {
+  text-align: center;
+  color: #fff;
+}
+
+.left-content img {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+
+/* ===== Right Content (Form) ===== */
+.form-container {
+  flex: 1;
+  max-width: 420px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===== Inputs ===== */
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.inputs label {
+  width: 25%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-align: right;
+}
+
+.inputs input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.inputs input:focus {
+  border: 1px solid #4cafef;
+}
+
+/* ===== Buttons ===== */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4cafef, #007bff);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+/* ===== Text Links ===== */
+.form-container p {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.form-container p a {
+  color: #4cafef;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.form-container p a:hover {
+  color: #00c6ff;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 900px) {
+  .login-main-container {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* let it adjust naturally */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .left-content {
+    display: none; /* 🔥 hide image section on small screens */
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .inputs label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .inputs input {
+    width: 100%;
+  }
+}
