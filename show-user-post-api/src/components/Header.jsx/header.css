@@ -1,0 +1,33 @@
+.navbar {
+    width: 80%;
+    height: 7vh;
+    background-color: rgb(60, 56, 67);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+.navbar .brand {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.navbar ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
