@@ -5,13 +5,11 @@
  ## 1 : folder structure :
     src/
     |   |components/
-    |   |   | Todo.jsx
+    |   |   | Component1.jsx
+    |   |   | Component2.jsx
+    |   |   | Component3.jsx
     |   |Context/
     |   |   | UserContext.jsx
-    |   |Pages/
-    |   |   | Home.jsx
-    |   |   | Login.jsx
-    |   |   | Register.jsx
     |   |App.jsx
     |   |main.jsx
 
