@@ -67,17 +67,26 @@ body {
     font-size: 25px;
 }
 
+.todo-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
 .todoContainer input {
-    width: 270px;
+    width: 50%;
     font-size: 24px;
     border: none;
     outline: #ff0000;
     border-radius: 5px;
+    margin: auto;
     padding: 5px;
 }
 
 .todoContainer button {
-    margin: 20px;
+    /* width: 20%; */
+    margin: auto;
     font-size: 24px;
     border: none;
     outline: #ff0000;

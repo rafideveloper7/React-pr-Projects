@@ -45,7 +45,7 @@ function Todo() {
   return (
     <div className="todoContainer">
       <h2>Add Tasks</h2>
-      <form onSubmit={addTask}>
+      <form className="todo-form" onSubmit={addTask}>
         <input
           type="text"
           placeholder="add item here"
