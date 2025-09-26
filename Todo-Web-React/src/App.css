@@ -140,79 +140,102 @@ body {
 }
 
 
-/* Login Page */
-
-
+/* Login Register Pages form */
+/* Parent form container */
 .log-reg-form {
-    width: 80%;
-    height: 100%;
-    /* height: auto; */
-    border: 1px solid #fff;
-    margin: 30vh auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    backdrop-filter: blur(500px);
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #fff;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
+/* Heading */
 .log-reg-form h2 {
-    margin: 10px;
-    font-size: 30px;
-    text-shadow: #ff0000 0 0 5px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-shadow: 0 0 5px #ff0000;
+  text-align: center;
 }
 
+/* Input wrapper */
 .log-reg-form .inputs {
-    width: 100%;
-    height: auto;
-    /* border: 1px solid; */
-    font-size: 20px;
-    font-weight: 700;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-}
-.log-reg-form .inputs label {
-    font-size: 20px;
-    margin: 5px auto;
-    padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
+/* Labels */
+.log-reg-form .inputs label {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
 .log-reg-form .inputs input {
-    font-size: 20px;
-    margin: 5px auto;
-    padding: 5px;
-    border: 1px solid #ffa600;
-    outline: none;
-    border-radius: 10px;
-    background-color: transparent;
-    color: #fff;
+  font-size: 18px;
+  padding: 10px 12px;
+  border: 1px solid #ffa600;
+  outline: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  transition: border-color 0.3s ease;
 }
 
 .log-reg-form .inputs input:focus {
-    border: 2px solid #fff4df;
-
+  border-color: #fff4df;
 }
 
+/* Submit button wrapper */
 .submit-p {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
+/* Submit button */
 .log-reg-form .inputs .submit {
-    width: 150px;
-    border: none;
-    background-color: #ffa600;
-    font-size: 24px;
-    font-weight: 600;
+  width: 100%;
+  border: none;
+  background-color: #ffa600;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.log-reg-form .inputs .submit:hover {
+  background-color: #ffbb33;
+}
+
+/* Paragraph below form */
 .log-reg-form .inputs p {
-    font-size: 16px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .log-reg-form .inputs p a {
-    color: #ffa600;
+  color: #ffa600;
+  text-decoration: none;
 }
+
+.log-reg-form .inputs p a:hover {
+  text-decoration: underline;
+}
+
