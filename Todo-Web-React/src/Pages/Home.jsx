@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { RegisterUser } from "../Context/UserContext";
 import { Navigate, useNavigate } from "react-router-dom";
 import Todo from "../Components/Todo";
+import ".././App.css";
 
 function Home() {
   const { user, setUser } = useContext(RegisterUser);
@@ -15,30 +16,26 @@ function Home() {
 
   if (!user) {
     return (
-      <div
-        style={{
-          width: "80vw",
-          height: "80vh",
-          margin: "auto",
-          backgroundColor: "#555555ff",
-          color: "#fff",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div className="home-guest">
         <h3>Please Login!</h3>
         <button onClick={() => navigate("/login")}>Login</button>
       </div>
     );
-  }
+  };
+
+
+  const userProfile = () => {
+    alert(`Name : ${user.name}\nEmail : ${user.email}`)
+  };
 
   return (
     <>
-      <div style={{width: "100%", height: "72px", display:"flex", justifyContent: "space-around", alignItems: "center"}}>
+      <div className="home-header">
         <h1>{user.name}</h1>
-        <button onClick={handleLogout}>Logout</button>
+        <div>
+          <button onClick={handleLogout}>Logout</button>
+          <button className="home-profile-btn" onClick={userProfile}>Profile</button>
+        </div>
       </div>
       <div>
         <Todo />
